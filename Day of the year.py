@@ -56,3 +56,8 @@ def day_of_year(year, month, day):
         return None
 
 print('It\'s day', day_of_year(year, month, day))
+
+if is_year_leap(year):
+	print('A leap year')
+else:
+	print('Not a leap year')
