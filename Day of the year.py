@@ -28,7 +28,7 @@ def days_in_month(year, month):
     
     #A list of days for January to December for a common year
     days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    month_days  = days[month - 1]
+    month_days = days[month - 1]
 
     #For February on a leap year
     if month == 2 and is_year_leap(year):
@@ -55,4 +55,4 @@ def day_of_year(year, month, day):
     else:
         return None
 
-print(day_of_year(year, month, day))
+print('It\'s day', day_of_year(year, month, day))
