@@ -171,10 +171,10 @@ display_board(board)
 for i in range(5):
     if len(make_list_of_free_fields(board)) != 0:
         if victory_for(board, "O") == True:
-            print("You won!")
+            print("Congratulations you have won!")
             break
         elif victory_for(board, "X") == True:
-            print("Computer won!")
+            print("Sorry the computer have won!")
             break
         else:
             enter_move(board)
@@ -183,10 +183,10 @@ for i in range(5):
             display_board(board)
     else:
         if victory_for(board, "O") == True:
-            print("You won!")
+            print("Congratulations you have won!")
             break
         elif victory_for(board, "X") == True:
-            print("Computer won!")
+            print("Sorry the computer have won!")
             break
         else:
-            print("It's a tie") 
+            print("It's a tie!") 
